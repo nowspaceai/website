@@ -248,7 +248,7 @@ function FeatureCard({ icon, title, description }: { icon: React.ReactNode; titl
 	)
 }
 
-function LocationCard({ image, name, address }) {
+function LocationCard({ image, name, address }: { image: string; name: string; address: string }) {
 	return (
 		<div className="bg-white rounded-lg shadow-md overflow-hidden">
 			<Image src={image} alt={name} width={600} height={400} className="w-full h-48 object-cover" />
